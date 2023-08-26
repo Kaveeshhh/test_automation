@@ -1,4 +1,4 @@
-package testautomationu;
+package Tests;
 import Pages.HomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -8,8 +8,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import Pages.LoginPage;
-
-import java.time.Duration;
 
 public class LoginTest {
 

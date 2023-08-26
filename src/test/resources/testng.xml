@@ -3,7 +3,7 @@
 
     <test name = "Simple HTML-XML test">
         <classes>
-            <class name = "testautomationu.LoginTest" />
+            <class name = "Tests.LoginTest" />
         </classes>
     </test>
 </suite>

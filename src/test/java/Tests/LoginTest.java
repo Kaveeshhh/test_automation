@@ -27,8 +27,8 @@ public class LoginTest {
     }
 
     @Test
-    @Parameters({"username", "password"})
-    public void testLogin(String username, String password) {
+    @Parameters({"username", "password", "expectedUserName"})
+    public void testLogin(String username, String password, String expectedUserName) {
         // Perform login
        /* try {
             Thread.sleep(5000);
@@ -39,7 +39,6 @@ public class LoginTest {
         loginPage.enterPassword(password);
         loginPage.clickLogin();
         String actualUserName = homepage.getUserNameDropDownText();
-        String expectedUserName = "Test 1 Collings";
         // Add assertions or verifications for successful login here
         Assert.assertEquals(actualUserName,expectedUserName, "Username not valid");
     }

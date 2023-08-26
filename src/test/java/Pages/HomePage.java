@@ -15,7 +15,7 @@ public class HomePage {
         this.driver = driver;
     }
 
-    private By lblUserNameDropDown = By.xpath("//p[text()='Test 1 Collings']");
+    private By lblUserNameDropDown = By.xpath("//p[@class = 'oxd-userdropdown-name']");
 
     public String getUserNameDropDownText(){
         wait(lblUserNameDropDown);

@@ -37,7 +37,7 @@ public class LoginTest {
         loginPage.enterPassword("admin123");
         loginPage.clickLogin();
         String actualUserName = homepage.getUserNameDropDownText();
-        String expectedUserName = "PaulCollings";
+        String expectedUserName = "Paul Collings";
         // Add assertions or verifications for successful login here
         Assert.assertEquals(actualUserName,expectedUserName, "Username not valid");
     }

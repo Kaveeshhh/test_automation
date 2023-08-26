@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import Pages.LoginPage;
 
@@ -26,18 +27,19 @@ public class LoginTest {
     }
 
     @Test
-    public void testLogin() {
+    @Parameters({"username", "password"})
+    public void testLogin(String username, String password) {
         // Perform login
        /* try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }*/
-        loginPage.enterUsername("Admin");
-        loginPage.enterPassword("admin123");
+        loginPage.enterUsername(username);
+        loginPage.enterPassword(password);
         loginPage.clickLogin();
         String actualUserName = homepage.getUserNameDropDownText();
-        String expectedUserName = "PaulCollings";
+        String expectedUserName = "Test 1 Collings";
         // Add assertions or verifications for successful login here
         Assert.assertEquals(actualUserName,expectedUserName, "Username not valid");
     }

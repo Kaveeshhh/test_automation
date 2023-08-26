@@ -15,7 +15,7 @@ public class HomePage {
         this.driver = driver;
     }
 
-    private By lblUserNameDropDown = By.xpath("//p[text()='Paul Collings']");
+    private By lblUserNameDropDown = By.xpath("//p[text()='Test 1 Collings']");
 
     public String getUserNameDropDownText(){
         wait(lblUserNameDropDown);

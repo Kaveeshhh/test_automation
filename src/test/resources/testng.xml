@@ -2,6 +2,8 @@
 <suite name = "Simple HTML-XML Suite">
 
     <test name = "Simple HTML-XML test">
+        <parameter name="username" value="Admin" />
+        <parameter name="password" value="admin123" />
         <classes>
             <class name = "Tests.LoginTest" />
         </classes>
